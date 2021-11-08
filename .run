@@ -28,6 +28,7 @@ def CG_content(seq):
     num_G = seq.count("G")
     return (num_C + num_G) / len(seq)
 
+#求若干条序列中每条序列GC含量
 def CG_contents(seq):
     values = []
     for i in range(0,len(seq)):
@@ -63,6 +64,7 @@ def getLocalFile():
     #print('文件路径：',filePath)
     return filePath
 
+#保存文件路径
 def saveLocalFile():
     root=tk.Tk()
     root.withdraw()
